@@ -4,7 +4,9 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
+import javafx.scene.text.Font;
 
 import java.io.IOException;
 
@@ -17,8 +19,13 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-    	System.out.println(App.class.getResource("fxmls/primary.fxml").toString());
-        scene = new Scene(loadFXML("primary"), 640, 480);
+    	
+    	Font fonte = Font.loadFont(getClass().getResourceAsStream("css/fontes/Chonky_Bunny.ttf"), 10);
+    	Image icone = new Image(getClass().getResourceAsStream("imagens/icon-latti.png"));
+
+        scene = new Scene(loadFXML("Menu"));
+        stage.getIcons().add(icone);
+        stage.setTitle("Latti");
         stage.setScene(scene);
         stage.show();
     }

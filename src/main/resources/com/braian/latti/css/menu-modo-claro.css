@@ -1,0 +1,12 @@
+.lbl-titulo {
+    -fx-font-family: 'Chonky Bunny';
+    -fx-font-size: 90px;
+    -fx-text-fill: #F2F2F2;
+}
+
+.banner-img {
+    -fx-fit-height: 100.0;
+    -fx-border-width: 0 0 2px 0; /* Adicionando a borda na parte inferior */
+    -fx-border-color: #5BA17A; /* Cor da linha */
+    -fx-padding: 0 0 10px 0; /* Espaçamento abaixo da imagem */
+}
